@@ -1,0 +1,82 @@
+:root {
+    /* primary colors */
+    --purple: hsl(259, 100%, 65%);
+    --lightRed: hsl(0, 100%, 67%);
+
+    --white: hsl(0, 0%, 100%);
+    --offWhite: hsl(0, 0%, 94%);
+    --lightGrey: hsl(0, 0%, 86%);
+    --smokeyGrey: hsl(0, 1%, 44%);
+    --offBlack: hsl(0, 0%, 8%);
+}
+
+
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: var(--lightGrey);
+   font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 40vw;
+    padding: 1.5rem;
+    background-color: var(--white) ;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 130px;
+
+}
+
+
+
+form {
+    display: flex;
+    justify-content: space-between;
+    color: var(--smokeyGrey);
+    border-bottom: 1px solid var(--lightGrey);
+    padding-bottom: 1.5rem;
+    position: relative;  
+}
+
+input {
+    font-size: 32px;
+    width: 40%;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid var(--lightGrey);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid var(--purple)
+}
+
+.cta {
+    width: 40px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    padding: 1.5rem;
+    position: absolute;
+    right: 0%;
+    bottom: -45%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+span {
+    color: var(--purple);
+}
+
+p{
+    color: var(--offBlack);
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 800;
+    margin: 0;
+}
