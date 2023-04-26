@@ -18,33 +18,36 @@
 </head>
 <body>
 <main>
-  <form id="form">
-    <label for="day">
+  <form id="form" novalidate>
+    <label for="day" class="label">
       DAY <br>
-      <input type="text" id="day" name="day" placeholder="DD"/>
+      <input type="number" id="day" name="day" placeholder="DD"/>
+      <div id="dayError"></div>
     </label>
 
-    <label for="month">
+    <label for="month" class="label">
       MONTH <br>
-      <input type="text" id="month" name="month" placeholder="MM"/>
+      <input type="number" id="month" name="month" placeholder="MM"/>
+      <div id="monthError"></div>
     </label>
     
 
-    <label for="year">
+    <label for="year" class="label">
       YEAR <br>
-      <input type="text" id="year" name="year" placeholder="YYYY"/>
+      <input type="number" id="year" name="year" placeholder="YYYY"/>
+      <div id="yearError"></div>
     </label>
 
-    <div class="cta" onclick="calculate()">
+    <div class="btn" onclick="calculate()">
       <img src="./assets/images/icon-arrow.svg"/>
     </div>
     
   </form>
 
-  <div>
-    <p><span id="years">-- </span>years</p>
-    <p><span id="months">-- </span>months</p>
-    <p><span id="days">-- </span>days</p>
+  <div class="output">
+    <p><span class="dash" id="years">-- </span> years</p>
+    <p><span class="dash" id="months">-- </span> months</p>
+    <p><span class="dash" id="days">-- </span> days</p>
   </div>
 
 </main>

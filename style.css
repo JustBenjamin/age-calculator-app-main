@@ -24,12 +24,12 @@ body {
 
 main {
     width: 40vw;
-    padding: 1.5rem;
+    padding: 3.5rem;
     background-color: var(--white) ;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 130px;
+    border-bottom-right-radius: 210px;
 
 }
 
@@ -40,7 +40,7 @@ form {
     justify-content: space-between;
     color: var(--smokeyGrey);
     border-bottom: 1px solid var(--lightGrey);
-    padding-bottom: 1.5rem;
+    padding:0 0 1.5rem 0;
     position: relative;  
 }
 
@@ -57,7 +57,25 @@ input:focus {
     border: 1px solid var(--purple)
 }
 
-.cta {
+input:invalid {
+    border: 1px solid red;
+  }
+  
+  input:focus:invalid {
+    border: 1px solid red;
+  }
+
+
+#dayError,
+#monthError,
+#yearError {
+color:hsl(0, 100%, 67%);
+font-style: italic;
+font-weight: 100;
+font-size:x-small;
+}
+
+.btn {
     width: 40px;
     background-color: var(--purple);
     border-radius: 50%;
@@ -69,14 +87,59 @@ input:focus {
     cursor: pointer;
 }
 
-span {
+.btn > img {
+    margin: auto;
+    width: 100%;
+}
+
+
+.output {
+    margin: 2.5rem 0 0 0;
+}
+
+.dash {
     color: var(--purple);
 }
 
 p{
     color: var(--offBlack);
-    font-size: 3rem;
+    font-size: 4rem;
     font-style: italic;
     font-weight: 800;
     margin: 0;
 }
+
+
+@media screen and (max-width: 480px) {
+  .btn {
+    width: 15px;
+    height: 15px;
+    bottom: -23%;
+    right: 40%;
+
+  }
+
+  main {
+    width: 60vw;
+    padding: 2.5rem;
+  }
+
+  form {
+    padding:0 0 3.5rem 0;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: smaller;
+
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  
+  }
