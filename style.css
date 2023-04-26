@@ -92,6 +92,10 @@ font-size:x-small;
     cursor: pointer;
 }
 
+.btn:hover {
+    background-color: var(--offBlack);
+}
+
 .btn > img {
     margin: auto;
     width: 100%;
