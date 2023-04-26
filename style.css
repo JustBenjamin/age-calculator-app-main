@@ -23,7 +23,7 @@ body {
 }
 
 main {
-    width: 40vw;
+    width: 55vw;
     padding: 3.5rem;
     background-color: var(--white) ;
     border-top-right-radius: 25px;
@@ -46,15 +46,20 @@ form {
 
 input {
     font-size: 32px;
+    font-weight: 700;
     width: 40%;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 0.7rem;
     border: 1px solid var(--lightGrey);
+}
+
+input:placeholder-shown {
+    font-weight: 700;
 }
 
 input:focus {
     outline: none;
-    border: 1px solid var(--purple)
+    border: 1px solid var(--purple);
 }
 
 input:invalid {
